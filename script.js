@@ -26,8 +26,8 @@ const TRAITS = [
   {
     id: 'status',
     label: 'Conservation Status',
-    keywords: ['endangered', 'critically', 'threatened', 'rare', 'vulnerable', 'protected', 'critically endangered'],
-    hint: 'There are fewer than 1,500 of us left in the wild 😢'
+    keywords: ['endangered', 'threatened', 'rare', 'vulnerable', 'protected', 'iucn'],
+    hint: 'The IUCN listed my status in 2018 — not the worst category, but still serious 😢'
   },
   {
     id: 'forest',
@@ -52,6 +52,12 @@ const TRAITS = [
     label: 'Distinctive Look',
     keywords: ['mohawk', 'crest', 'mane', 'hair', 'tail', 'tuft', 'whisker', 'chin', 'golden', 'mohawk crest', 'long tail'],
     hint: 'Think punk rock — it\'s all about the hair on top 🎸'
+  },
+  {
+    id: 'discovery',
+    label: 'Discovery Year',
+    keywords: ['2003', '2006', 'new genus', 'new species', 'discovered', 'first new', '1923', 'rungwecebus'],
+    hint: 'I was the first new monkey genus named in nearly a century — spotted in the early 2000s 🔬'
   }
 ];
 
