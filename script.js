@@ -62,7 +62,7 @@ const TRAITS = [
 ];
 
 // ---------- Always-Wrong Decoy Answers ----------
-const WRONG_ALWAYS = ['critically endangered', 'tropical forest', 'nocturnal', 'ground dwelling'];
+const WRONG_ALWAYS = ['critically endangered', 'tropical forest', 'nocturnal', 'west africa'];
 
 // ---------- Rejection Messages ----------
 const NO_MATCH_MSGS = [
