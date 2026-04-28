@@ -6,7 +6,7 @@ A creative educational website built as a dating profile for the **Kipunji** (*R
 [View the website](https://Itz-creator07.github.io/primate-dating-profile)
 
 ## 📋 About
-This project was created for an AI4ALL primate behavior and ecology assignment. It presents biological and behavioral information about the Kipunji monkey in a fun, dating profile format.
+This project was created for Biological Antropology Lab (SMC ANTHRO 1)  primate behavior and ecology assignment. It presents biological and behavioral information about the Kipunji monkey in a fun, dating profile format.
 
 ## ✅ Assignment Requirements Covered
 - Species profile written in first person
