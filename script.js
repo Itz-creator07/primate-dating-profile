@@ -50,16 +50,19 @@ const TRAITS = [
   {
     id: 'appearance',
     label: 'Distinctive Look',
-    keywords: ['mohawk', 'crest', 'mane', 'hair', 'tail', 'tuft', 'whisker', 'chin', 'golden', 'mohawk crest', 'long tail'],
+    keywords: ['mohawk', 'crest', 'mohawk crest', 'mane', 'hair', 'tail', 'tuft', 'whisker', 'long tail'],
     hint: 'Think punk rock — it\'s all about the hair on top 🎸'
   },
   {
     id: 'discovery',
     label: 'Discovery Year',
-    keywords: ['2003', '2006', 'new genus', 'new species', 'discovered', 'first new', '1923', 'rungwecebus'],
+    keywords: ['2003', 'discovered 2003', '2006', 'new genus', 'new species', 'discovered', '1923', 'rungwecebus'],
     hint: 'I was the first new monkey genus named in nearly a century — spotted in the early 2000s 🔬'
   }
 ];
+
+// ---------- Always-Wrong Decoy Answers ----------
+const WRONG_ALWAYS = ['critically endangered', 'tropical forest', 'nocturnal', 'ground dwelling'];
 
 // ---------- Rejection Messages ----------
 const NO_MATCH_MSGS = [
@@ -102,6 +105,18 @@ document.querySelectorAll('.chip').forEach(btn => {
 function checkMatch() {
   const val = (charInput ? charInput.value : '').trim();
   if (!val) { showFeedback('Type something first! 📝', 'hint'); return; }
+
+  // Reject decoy wrong answers immediately
+  const valLower = val.toLowerCase();
+  if (WRONG_ALWAYS.some(w => valLower.includes(w))) {
+    tries++;
+    if (tryCountEl) tryCountEl.textContent = tries;
+    const msg = NO_MATCH_MSGS[Math.floor(Math.random() * NO_MATCH_MSGS.length)];
+    showFeedback(msg, 'wrong');
+    shakeWrapper();
+    if (charInput) charInput.value = '';
+    return;
+  }
 
   tries++;
   if (tryCountEl) tryCountEl.textContent = tries;
