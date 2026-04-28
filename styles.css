@@ -453,8 +453,6 @@ blockquote {
   transition: background var(--transition), transform var(--transition);
 }
 .chip:hover { background: var(--green); color: var(--white); transform: scale(1.05); }
-.chip-wrong { background: #ffe8e8; color: #c0392b; border-color: #e57373; }
-.chip-wrong:hover { background: #c0392b; color: var(--white); }
 
 /* Matched chips */
 .matched-label {
