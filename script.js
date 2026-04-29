@@ -61,8 +61,8 @@ const TRAITS = [
   }
 ];
 
-// Win when all 9 traits are matched
-const WIN_COUNT = 9;
+// Win when 6 traits are matched
+const WIN_COUNT = 6;
 
 // ---------- Always-Wrong Decoy Answers ----------
 const WRONG_ALWAYS = ['critically endangered', 'tropical forest', 'nocturnal', 'west africa'];
