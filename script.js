@@ -32,13 +32,13 @@ const TRAITS = [
   {
     id: 'forest',
     label: 'Montane Forest',
-    keywords: ['montane', 'highland', 'mountain', 'cloud', 'udzungwa', 'rungwe', 'montane forest'],
+    keywords: ['montane', 'highland', 'mountain', 'cloud', 'montane forest'],
     hint: 'I live very high up — my forest is shrouded in clouds ☁️'
   },
   {
     id: 'social',
     label: 'Group Living',
-    keywords: ['group', 'groups', 'troop', 'troops', 'social', 'community', 'band', 'group living', 'grooming', 'social grooming'],
+    keywords: ['group', 'groups', 'troop', 'troops', 'group living', 'community', 'band'],
     hint: 'Strength in numbers — I live with 12 to 36 others 🐒'
   },
   {
@@ -49,8 +49,8 @@ const TRAITS = [
   },
   {
     id: 'appearance',
-    label: 'Distinctive Look',
-    keywords: ['mohawk', 'crest', 'mohawk crest', 'mane', 'hair', 'tail', 'whisker', 'long tail'],
+    label: 'Mohawk Crest',
+    keywords: ['mohawk', 'crest', 'mohawk crest', 'mane', 'hair', 'whisker'],
     hint: 'Think punk rock — it\'s all about the hair on top 🎸'
   },
   {
@@ -58,6 +58,24 @@ const TRAITS = [
     label: 'Discovery Year',
     keywords: ['2003', 'discovered 2003', '2006', 'new genus', 'new species', 'discovered', '1923'],
     hint: 'First new monkey genus since 1923 — spotted in the early 2000s 🔬'
+  },
+  {
+    id: 'grooming',
+    label: 'Social Grooming',
+    keywords: ['social grooming', 'grooming'],
+    hint: 'We bond and build trust by grooming each other 🤝'
+  },
+  {
+    id: 'udzungwa',
+    label: 'Udzungwa Mountains',
+    keywords: ['udzungwa', 'rungwe', 'udzungwa mountains'],
+    hint: 'One of my two home forests — a mountain range in Tanzania ⛰️'
+  },
+  {
+    id: 'tail',
+    label: 'Long Tail',
+    keywords: ['long tail', 'tail'],
+    hint: 'My tail is longer than half my body, sometimes tipped white 🐒'
   }
 ];
 
