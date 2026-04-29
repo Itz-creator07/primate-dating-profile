@@ -3,13 +3,13 @@
 //   script.js
 // =============================================
 
-// ---------- Traits to Match ----------
+// ---------- Traits to Match (6 total) ----------
 const TRAITS = [
   {
     id: 'habitat',
     label: 'Native Country',
     keywords: ['tanzania', 'tanzanian', 'east africa', 'africa'],
-    hint: 'It\'s an East African country famous for Mount Kilimanjaro 🏔️'
+    hint: 'East African country famous for Mount Kilimanjaro 🏔️'
   },
   {
     id: 'arboreal',
@@ -21,43 +21,25 @@ const TRAITS = [
     id: 'diet',
     label: 'Frugivore Diet',
     keywords: ['fruit', 'fruits', 'leaves', 'leaf', 'seeds', 'seed', 'bark', 'insects', 'figs', 'frugivore', 'fruit eater'],
-    hint: 'I love munching on things that grow on forest trees 🍃'
+    hint: 'I munch on things that grow on forest trees 🍃'
   },
   {
     id: 'status',
     label: 'Conservation Status',
-    keywords: ['endangered', 'threatened', 'rare', 'vulnerable', 'protected', 'iucn'],
-    hint: 'The IUCN listed my status in 2018 — not the worst category, but still serious 😢'
-  },
-  {
-    id: 'forest',
-    label: 'Montane Forest',
-    keywords: ['montane', 'highland', 'mountain', 'cloud', 'afromontane', 'udzungwa', 'rungwe', 'montane forest'],
-    hint: 'I live very high up — my forest is often shrouded in clouds ☁️'
+    keywords: ['endangered', 'threatened', 'rare', 'iucn'],
+    hint: 'IUCN listed my status in 2018 — serious but not the worst 😢'
   },
   {
     id: 'social',
     label: 'Group Living',
-    keywords: ['group', 'groups', 'troop', 'troops', 'social', 'community', 'pack', 'herd', 'band', 'group living'],
-    hint: 'I\'m quite the social butterfly — strength in numbers! 🐒'
-  },
-  {
-    id: 'vocal',
-    label: 'Vocal Calls',
-    keywords: ['call', 'calls', 'vocal', 'sound', 'alarm', 'voice', 'cry', 'vocaliz', 'vocal calls'],
-    hint: 'I\'m very loud when danger is near — I warn my whole family 📢'
-  },
-  {
-    id: 'appearance',
-    label: 'Distinctive Look',
-    keywords: ['mohawk', 'crest', 'mohawk crest', 'mane', 'hair', 'tail', 'tuft', 'whisker', 'long tail'],
-    hint: 'Think punk rock — it\'s all about the hair on top 🎸'
+    keywords: ['group', 'groups', 'troop', 'troops', 'social', 'community', 'band', 'group living', 'grooming', 'social grooming'],
+    hint: 'Strength in numbers — I live with 12 to 36 others 🐒'
   },
   {
     id: 'discovery',
     label: 'Discovery Year',
-    keywords: ['2003', 'discovered 2003', '2006', 'new genus', 'new species', 'discovered', '1923', 'rungwecebus'],
-    hint: 'I was the first new monkey genus named in nearly a century — spotted in the early 2000s 🔬'
+    keywords: ['2003', 'discovered 2003', '2006', 'new genus', 'new species', 'discovered', '1923'],
+    hint: 'First new monkey genus since 1923 — spotted in the early 2000s 🔬'
   }
 ];
 
