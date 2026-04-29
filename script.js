@@ -3,7 +3,7 @@
 //   script.js
 // =============================================
 
-// ---------- Traits to Match (6 total) ----------
+// ---------- Traits to Match ----------
 const TRAITS = [
   {
     id: 'habitat',
@@ -30,10 +30,28 @@ const TRAITS = [
     hint: 'IUCN listed my status in 2018 — serious but not the worst 😢'
   },
   {
+    id: 'forest',
+    label: 'Montane Forest',
+    keywords: ['montane', 'highland', 'mountain', 'cloud', 'udzungwa', 'rungwe', 'montane forest'],
+    hint: 'I live very high up — my forest is shrouded in clouds ☁️'
+  },
+  {
     id: 'social',
     label: 'Group Living',
     keywords: ['group', 'groups', 'troop', 'troops', 'social', 'community', 'band', 'group living', 'grooming', 'social grooming'],
     hint: 'Strength in numbers — I live with 12 to 36 others 🐒'
+  },
+  {
+    id: 'vocal',
+    label: 'Vocal Calls',
+    keywords: ['call', 'calls', 'vocal', 'sound', 'alarm', 'honk', 'bark', 'chirp', 'chutter', 'vocal calls'],
+    hint: 'I have 4 specific calls including a honk-bark and eagle alarm chirp 📢'
+  },
+  {
+    id: 'appearance',
+    label: 'Distinctive Look',
+    keywords: ['mohawk', 'crest', 'mohawk crest', 'mane', 'hair', 'tail', 'whisker', 'long tail'],
+    hint: 'Think punk rock — it\'s all about the hair on top 🎸'
   },
   {
     id: 'discovery',
@@ -42,6 +60,9 @@ const TRAITS = [
     hint: 'First new monkey genus since 1923 — spotted in the early 2000s 🔬'
   }
 ];
+
+// Win when all 9 traits are matched
+const WIN_COUNT = 9;
 
 // ---------- Always-Wrong Decoy Answers ----------
 const WRONG_ALWAYS = ['critically endangered', 'tropical forest', 'nocturnal', 'west africa'];
@@ -119,7 +140,7 @@ function checkMatch() {
     renderMatchedChips();
     if (charInput) charInput.value = '';
 
-    if (matchedIds.length === TOTAL) {
+    if (matchedIds.length === WIN_COUNT) {
       setTimeout(showMatchOverlay, 600);
     }
   } else {
@@ -176,9 +197,8 @@ function closeOverlay() {
 // ---------- Update Progress ----------
 function updateProgress() {
   const count = matchedIds.length;
-  const pct   = Math.round((count / TOTAL) * 100);
-  if (progressFill) progressFill.style.width = pct + '%';
-  if (progressText) progressText.textContent  = count + ' / ' + TOTAL + ' traits';
+  if (progressFill) progressFill.style.width = Math.round((count / WIN_COUNT) * 100) + '%';
+  if (progressText) progressText.textContent  = count + ' / ' + WIN_COUNT + ' traits';
   if (matchCountEl) matchCountEl.textContent  = count;
 }
 
